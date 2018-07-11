@@ -76,10 +76,11 @@
 <style lang="stylus" scoped>
   @import '~styles/varibles.styl'
   @import '~styles/mixins.styl'
-  .wrapper
-    overflow: hidden
+  .wrapper >>> .swiper-container
     height: 0
     padding-bottom: 50%
+  .wrapper
+    margin-top: .1rem
     .icons
       overflow: hidden
       position: relative
