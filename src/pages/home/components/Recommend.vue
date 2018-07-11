@@ -2,7 +2,7 @@
   <div>
     <div class="title">热门推荐</div>
     <ul>
-      <li class="list-item border-bottom" v-for="item of recommendList" :key="item.id">
+      <li class="list-item border-bottom" v-for="item of list" :key="item.id">
         <img class="item-img" :src="item.imgUrl">
         <div class="item-info">
           <p class="item-title">{{item.title}}</p>
@@ -17,31 +17,8 @@
 <script>
   export default {
     name: "HomeRecommend",
-    data () {
-      return {
-        recommendList: [
-        {
-          id: '0001',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/1707/bf/bfd58bb85da6dde3a3.water.jpg_200x200_54a9d1b6.jpg',
-          title: '深圳必游TOP10',
-          desc: '来到深圳，你需要来这里签到',
-        }, {
-          id: '0002',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/1807/99/992c99c98928c509a3.water.jpg_200x200_fc4df6ea.jpg',
-          title: '深圳欢乐谷',
-          desc: '来到深圳，你需要来这里签到',
-        }, {
-          id: '0003',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/201307/18/f25ac054eec3804dc8d65eac.jpg_200x200_a008b6ca.jpg',
-          title: '海洋奇梦馆',
-          desc: '来到深圳，你需要来这里签到',
-        }, {
-          id: '0004',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/1507/64/34362835b4a219af8b36803d31a6380f.water.jpg_200x200_bc5c0452.jpg',
-          title: '深圳小梅沙海洋世界',
-          desc: '来到深圳，你需要来这里签到',
-        }]
-      }
+    props: {
+      list: Array
     }
   }
 </script>
