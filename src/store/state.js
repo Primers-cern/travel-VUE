@@ -1,7 +1,7 @@
 let defaultCity = "深圳"
 try {
-  if (localStoreage.city) {
-    defaultCity = localStoreage.city
+  if (localStorage.city) {
+    defaultCity = localStorage.city
   }
 } catch (e) {}
 
