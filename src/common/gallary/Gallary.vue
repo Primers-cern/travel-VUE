@@ -16,6 +16,9 @@
 
   export default {
     name: "CommonGallary",
+    props: {
+      imgs: Array
+    },
     data () {
       return {
         swiperOption: {
@@ -23,11 +26,7 @@
           paginationType: 'fraction',
           observeParents: true,
           observer: true
-        },
-        imgs: [
-          '//img1.qunarzz.com/sight/p0/201301/16/6a16218e8b39640093835fbb.jpg_r_800x800_e2ff7015.jpg',
-          '//img1.qunarzz.com/sight/p0/201405/30/d9d37ae540531d96e1bd69c4f2bc9caf.jpg_r_800x800_16ce38dd.jpg'
-        ]
+        }
       }
     },
     methods: {
