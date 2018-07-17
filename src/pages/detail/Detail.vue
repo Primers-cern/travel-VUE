@@ -1,15 +1,22 @@
 <template>
   <div>
     <detail-banner></detail-banner>
+    <detail-banner></detail-banner>
+    <detail-banner></detail-banner>
+    <detail-banner></detail-banner>
+    <detail-banner></detail-banner>
+    <detail-header></detail-header>
   </div>
 </template>
 
 <script>
-  import detailBanner from './components/Banner'
+  import DetailBanner from './components/Banner'
+  import DetailHeader from './components/Header'
   export default {
     name: "Detail",
     components: {
-      detailBanner
+      DetailBanner,
+      DetailHeader
     }
   }
 </script>
