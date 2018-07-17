@@ -1,10 +1,6 @@
 <template>
   <div>
     <detail-banner></detail-banner>
-    <detail-banner></detail-banner>
-    <detail-banner></detail-banner>
-    <detail-banner></detail-banner>
-    <detail-banner></detail-banner>
     <detail-header></detail-header>
   </div>
 </template>

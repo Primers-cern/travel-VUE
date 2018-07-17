@@ -50,7 +50,10 @@
     top: 0
     left: 0
     margin: .14rem
-    padding: .06rem
+    height: .52rem
+    width: .52rem
+    line-height: .52rem
+    text-indent: .03rem
     border-radius: 1rem
     color: #fff
     background-color: #00bcd4
