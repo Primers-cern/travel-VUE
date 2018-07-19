@@ -8,8 +8,11 @@ module.exports = {
   dev: {
 
     // Paths
+    //assets子目录
     assetsSubDirectory: 'static',
+    //assets公共路径
     assetsPublicPath: '/',
+    //代理表
     proxyTable: {
         '/api': {
             target: 'http://localhost:8080',
